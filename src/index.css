@@ -1,0 +1,49 @@
+@import "tailwindcss";
+/* Scrollbar Styling */
+.scroll-custom::-webkit-scrollbar {
+    width: 6px;
+  }
+  .scroll-custom::-webkit-scrollbar-track {
+    background: #fff8dc; /* light yellow */
+  }
+  .scroll-custom::-webkit-scrollbar-thumb {
+    background-color: #b8860b; /* dark gold */
+    border-radius: 4px;
+  }
+  .scroll-custom {
+    scrollbar-width: thin;
+    scrollbar-color: #b8860b #fff8dc;
+  }
+  html, body {
+    overscroll-behavior: none;
+  }
+  /* Tambahkan di file Tailwind global CSS */
+.custom-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(200,160,30,0.7);
+  border-radius: 4px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.perspective-1000 {
+  perspective: 1000px;
+}
+/* index.css */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* Sembunyikan scrollbar di semua browser */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE dan Edge */
+  scrollbar-width: none; /* Firefox */
+}
